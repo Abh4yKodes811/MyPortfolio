@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhay Kumar Sharma | Cloud & Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Abhay Kumar Sharma, Computer Science Engineering Student and Cloud & Full Stack Developer. Specialized in cloud computing, FastAPI, Docker, React, and REST APIs.">
+  
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Link stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  <!-- Theme flash prevention: apply saved theme before first paint -->
+  <script>(function(){var t=localStorage.getItem('aks-portfolio-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()</script>
+</head>
+<body>
+
+  <!-- Subtle Grid overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- ============================================================
+       RESUME MODAL OVERLAY
+  ============================================================ -->
+  <div class="resume-modal-backdrop" id="resumeModalBackdrop" role="dialog" aria-modal="true" aria-label="Resume Preview">
+    <div class="resume-modal-panel">
+      <div class="resume-modal-header">
+        <div class="resume-modal-title-group">
+          <div class="resume-modal-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <span>resume-ABHAY.pdf</span>
+        </div>
+        <div class="resume-modal-actions">
+          <a href="resume/resume-ABHAY.pdf" download="resume-ABHAY.pdf" class="modal-action-btn modal-download-btn" aria-label="Download Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download
+          </a>
+          <button class="modal-action-btn modal-close-btn" id="resumeModalClose" aria-label="Close Resume Preview">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+      <div class="resume-modal-body">
+        <!-- Clean, elegant resume preview markup -->
+        <div class="resume-preview">
+          <div class="resume-preview-top">
+            <h1 class="resume-name">Abhay Kumar Sharma</h1>
+            <div class="resume-contact-line">
+              <span>+91-9569109384</span>
+              <span class="resume-sep">·</span>
+              <a href="mailto:aks9569109384@gmail.com">aks9569109384@gmail.com</a>
+              <span class="resume-sep">·</span>
+              <a href="https://linkedin.com/in/abhayksharma25" target="_blank" rel="noopener noreferrer">linkedin.com/in/abhayksharma25</a>
+              <span class="resume-sep">·</span>
+              <a href="https://github.com/Abh4yKodes811" target="_blank" rel="noopener noreferrer">github.com/Abh4yKodes811</a>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-section-title">Professional Summary</h2>
+            <p class="resume-section-text">Aspiring Computer Science Engineer with strong foundations in full-stack development, cloud computing, and DevOps. Proven track record of building secure, scalable microservices and cloud-native architectures using FastAPI, Python, and Docker. Passionate problem solver and competitive coder eager to contribute to high-impact software engineering teams.</p>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-section-title">Technical Skills</h2>
+            <div class="resume-skills-grid">
+              <div class="resume-skill-row"><span class="resume-skill-label">Languages</span><span>Python, SQL, JavaScript, HTML, CSS</span></div>
+              <div class="resume-skill-row"><span class="resume-skill-label">Backend &amp; Frameworks</span><span>FastAPI, Flask, RESTful APIs, JWT Authentication</span></div>
+              <div class="resume-skill-row"><span class="resume-skill-label">Frontend</span><span>React, Tailwind CSS</span></div>
+              <div class="resume-skill-row"><span class="resume-skill-label">Databases &amp; Storage</span><span>PostgreSQL, Redis, MinIO, SQLite</span></div>
+              <div class="resume-skill-row"><span class="resume-skill-label">DevOps &amp; Cloud</span><span>Docker, Docker Compose, GCP Fundamentals</span></div>
+              <div class="resume-skill-row"><span class="resume-skill-label">Tools</span><span>Git, GitHub, Postman, Data Analytics</span></div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-section-title">Technical Projects</h2>
+            <div class="resume-project">
+              <div class="resume-project-header">
+                <strong>GateFlow – Cloud API Gateway</strong>
+                <span class="resume-project-stack">React · FastAPI · Redis · Docker · JWT · HTTPX · Tailwind CSS</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Engineered a cloud-native API Gateway featuring JWT authentication and secure request routing to protect backend endpoints.</li>
+                <li>Optimized traffic orchestration using Redis-powered rate limiting to mitigate DoS vulnerabilities and manage bandwidth.</li>
+                <li>Architected a React monitoring dashboard with real-time health checks, analytics pipelines, and interactive testing environments.</li>
+                <li>Containerized the microservices topology via Docker Compose, enabling unified deployment and seamless scaling of all nodes.</li>
+              </ul>
+            </div>
+            <div class="resume-project">
+              <div class="resume-project-header">
+                <strong>StoreSphere – Secure File Storage &amp; Sharing Platform</strong>
+                <span class="resume-project-stack">React · FastAPI · PostgreSQL · Redis · Docker · JWT · MinIO</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Developed a multi-tenant file storage platform using RBAC schemas and stateless JWT session management.</li>
+                <li>Integrated MinIO object storage to handle multi-format file uploads, downloads, and secure resource sharing.</li>
+                <li>Designed a normalized PostgreSQL database optimized for fast file metadata lookups and tenant isolation.</li>
+                <li>Containerized the stack via Docker Compose, streamlining deployment across React, FastAPI, and storage modules.</li>
+              </ul>
+            </div>
+            <div class="resume-project">
+              <div class="resume-project-header">
+                <strong>Student Study Planner &amp; Productivity Tracker</strong>
+                <span class="resume-project-stack">Python · Flask · SQLite · HTML · CSS</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Built a full-stack academic workflow system for programmatic schedule organization and productivity benchmarking.</li>
+                <li>Programmed robust CRUD services using SQLite to efficiently persist tasks, schedules, and timeline logs.</li>
+                <li>Designed an intuitive Flask-templated frontend to minimize layout overhead and improve dashboard navigation.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-section-title">Education</h2>
+            <div class="resume-edu-row">
+              <div><strong>New Horizon College of Engineering</strong> — Bangalore, India</div>
+              <div class="resume-muted">B.Tech in Computer Science &amp; Engineering | 03/2023 – 07/2027</div>
+            </div>
+            <div class="resume-edu-row">
+              <div><strong>Rani Laxmi Bai Memorial Sr. Sec. School</strong> — Lucknow, India</div>
+              <div class="resume-muted">Class XII (CBSE) – Aggregate: 76.4% | 03/2022</div>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h2 class="resume-section-title">Certifications</h2>
+            <ul class="resume-cert-list">
+              <li><strong>Introduction to AI and Machine Learning on Google Cloud</strong> – Google Cloud / Coursera <span class="resume-muted">| 06/2026</span></li>
+              <li><strong>Cloud Computing and Distributed System</strong> – NPTEL <span class="resume-muted">| 01/2026 – 03/2026</span></li>
+              <li><strong>Data Analytics Job Simulation</strong> – Deloitte (Forage) <span class="resume-muted">| 09/2025</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. Sticky Navbar -->
+  <header class="navbar-header">
+    <div class="navbar-container">
+
+      <a href="index.html" class="logo">
+        <span class="logo-accent">AKS</span>.dev
+      </a>
+
+      <!-- Right side: nav links + theme toggle + hamburger -->
+      <div class="navbar-right">
+
+        <nav class="nav-links-container" id="navLinksContainer">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-item active-nav">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#timeline" class="nav-item">Timeline</a></li>
+            <li><a href="contact.html" class="nav-item-external">Contact</a></li>
+          </ul>
+          <!-- Mobile-only toggle inside drawer — hidden on desktop via CSS -->
+          <button class="theme-toggle theme-toggle-mobile" id="themeToggleMobile" aria-label="Toggle light/dark theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun"  xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </nav>
+
+        <!-- Theme toggle — desktop only; mobile version is inside the drawer above -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+
+        <!-- Mobile hamburger -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content Areas -->
+  <main>
+    
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-background"></div>
+      <div class="container hero-container">
+        <h1 class="hero-title typing-anim">
+          Hi, I'm <span class="gradient-text">Abhay Kumar Sharma</span>
+        </h1>
+        
+        <h2 class="hero-subtitle typing-anim-delay-1">
+          Computer Science Engineering Student &amp; <br class="mobile-break">
+          <span class="sub-accent">Cloud &amp; Full Stack Developer</span>
+        </h2>
+        
+        <p class="hero-desc typing-anim-delay-2">
+          Specializing in building high-performance backend APIs, scalable cloud architectures, and modern responsive frontend interfaces. Let's build something exceptional.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-ctas typing-anim-delay-3">
+          <!-- "View Resume" triggers the modal -->
+          <button class="btn btn-primary magnetic-btn" id="viewResumeBtn" aria-haspopup="dialog">
+            <span>View Resume</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="btn-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </button>
+
+          <a href="project.html" class="btn btn-secondary magnetic-btn">
+            <span>View Projects</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="btn-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="mailto:aks9569109384@gmail.com" class="social-btn magnetic-btn" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+            
+            <a href="https://github.com/Abh4yKodes811" target="_blank" rel="noopener noreferrer" class="social-btn magnetic-btn" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            </a>
+            
+            <a href="https://linkedin.com/in/abhayksharma25" target="_blank" rel="noopener noreferrer" class="social-btn magnetic-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="container grid-two-col">
+        
+        <!-- Left: Summary Info -->
+        <div class="about-info">
+          <h2 class="section-title">About Me</h2>
+
+          <!-- Professional Summary injected from resume -->
+          <div class="summary-badge-row">
+            <span class="summary-badge">Professional Summary</span>
+          </div>
+          <p class="about-text about-summary">
+            Aspiring Computer Science Engineer with strong foundations in full-stack development, cloud computing, and DevOps. Proven track record of building secure, scalable microservices and cloud-native architectures using <strong class="highlight">FastAPI</strong>, <strong class="highlight">Python</strong>, and <strong class="highlight">Docker</strong>. Passionate problem solver and competitive coder eager to contribute to high-impact software engineering teams.
+          </p>
+          <p class="about-text">
+            With a strong focus on cloud computing and REST APIs, I strive to design applications that are highly scalable, secure, and developer-friendly. I love bridging the gap between infrastructure management and high-level logic to deliver seamless digital products — from microservices backends to <strong class="highlight">React</strong> monitoring dashboards.
+          </p>
+        </div>
+
+        <!-- Right: Interactive IDE Mockup with Tabs -->
+        <div class="terminal-container">
+          <!-- Window chrome -->
+          <div class="terminal-header">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+            <!-- Tab Bar -->
+            <div class="terminal-tabs" role="tablist">
+              <button class="terminal-tab active" id="tab-profile" role="tab" aria-selected="true" data-target="code-profile">profile.py</button>
+              <button class="terminal-tab" id="tab-stack" role="tab" aria-selected="false" data-target="code-stack">stack.json</button>
+              <button class="terminal-tab" id="tab-arch" role="tab" aria-selected="false" data-target="code-arch">architecture.yaml</button>
+            </div>
+          </div>
+          <div class="terminal-body">
+
+            <!-- Tab Panel 1: profile.py -->
+            <pre class="terminal-code-panel active" id="code-profile" role="tabpanel"><code><span class="syntax-comment"># profile.py — Abhay Kumar Sharma</span>
+<span class="syntax-keyword">class</span> <span class="syntax-class">Developer</span>:
+    <span class="syntax-keyword">def</span> <span class="syntax-function">__init__</span>(self):
+        self.name     = <span class="syntax-string">"Abhay Kumar Sharma"</span>
+        self.role     = <span class="syntax-string">"Cloud &amp; Full Stack Developer"</span>
+        self.location = <span class="syntax-string">"Bangalore, India"</span>
+        self.college  = <span class="syntax-string">"New Horizon College of Engineering"</span>
+        self.degree   = <span class="syntax-string">"B.Tech CSE | 2023–2027"</span>
+        self.stack    = [
+            <span class="syntax-string">"FastAPI"</span>, <span class="syntax-string">"Flask"</span>, <span class="syntax-string">"React"</span>,
+            <span class="syntax-string">"Docker"</span>, <span class="syntax-string">"PostgreSQL"</span>, <span class="syntax-string">"Redis"</span>,
+        ]
+        self.interests = [
+            <span class="syntax-string">"Microservices"</span>, <span class="syntax-string">"Cloud-native"</span>,
+            <span class="syntax-string">"API Gateway Design"</span>, <span class="syntax-string">"DevOps"</span>,
+        ]
+
+    <span class="syntax-keyword">def</span> <span class="syntax-function">get_philosophy</span>(self) <span class="syntax-keyword">-&gt;</span> <span class="syntax-class">str</span>:
+        <span class="syntax-keyword">return</span> <span class="syntax-string">"Scale systems. Optimize performance. Ship fast."</span>
+
+<span class="syntax-comment"># Instantiate</span>
+me = <span class="syntax-class">Developer</span>()
+<span class="syntax-function">print</span>(me.get_philosophy())
+<span class="syntax-output">&gt; "Scale systems. Optimize performance. Ship fast."</span></code></pre>
+
+            <!-- Tab Panel 2: stack.json -->
+            <pre class="terminal-code-panel" id="code-stack" role="tabpanel"><code><span class="syntax-comment">// stack.json — Technology Stack</span>
+{
+  <span class="syntax-class">"backend"</span>: {
+    <span class="syntax-class">"primary"</span>: [<span class="syntax-string">"FastAPI"</span>, <span class="syntax-string">"Flask"</span>, <span class="syntax-string">"Python"</span>],
+    <span class="syntax-class">"auth"</span>: <span class="syntax-string">"JWT (Stateless Sessions)"</span>,
+    <span class="syntax-class">"apis"</span>: <span class="syntax-string">"RESTful · HTTPX (proxy routing)"</span>
+  },
+  <span class="syntax-class">"frontend"</span>: {
+    <span class="syntax-class">"framework"</span>: <span class="syntax-string">"React"</span>,
+    <span class="syntax-class">"styling"</span>: <span class="syntax-string">"Tailwind CSS"</span>,
+    <span class="syntax-class">"features"</span>: [<span class="syntax-string">"Real-time dashboards"</span>, <span class="syntax-string">"Health checks"</span>]
+  },
+  <span class="syntax-class">"databases"</span>: {
+    <span class="syntax-class">"relational"</span>: <span class="syntax-string">"PostgreSQL"</span>,
+    <span class="syntax-class">"cache_rate_limit"</span>: <span class="syntax-string">"Redis"</span>,
+    <span class="syntax-class">"object_storage"</span>: <span class="syntax-string">"MinIO (S3-compatible)"</span>,
+    <span class="syntax-class">"embedded"</span>: <span class="syntax-string">"SQLite"</span>
+  },
+  <span class="syntax-class">"devops"</span>: {
+    <span class="syntax-class">"containerization"</span>: <span class="syntax-string">"Docker &amp; Docker Compose"</span>,
+    <span class="syntax-class">"cloud"</span>: <span class="syntax-string">"Google Cloud Platform (GCP)"</span>,
+    <span class="syntax-class">"vcs"</span>: <span class="syntax-string">"Git · GitHub"</span>,
+    <span class="syntax-class">"testing"</span>: <span class="syntax-string">"Postman"</span>
+  }
+}</code></pre>
+
+            <!-- Tab Panel 3: architecture.yaml -->
+            <pre class="terminal-code-panel" id="code-arch" role="tabpanel"><code><span class="syntax-comment"># architecture.yaml — GateFlow Microservices</span>
+<span class="syntax-class">services</span>:
+  <span class="syntax-class">api_gateway</span>:
+    <span class="syntax-keyword">image</span>: <span class="syntax-string">fastapi:latest</span>
+    <span class="syntax-keyword">auth</span>: <span class="syntax-string">JWT Bearer Token</span>
+    <span class="syntax-keyword">rate_limit</span>:
+      <span class="syntax-keyword">backend</span>: <span class="syntax-string">Redis</span>
+      <span class="syntax-keyword">strategy</span>: <span class="syntax-string">sliding-window</span>
+      <span class="syntax-keyword">threshold</span>: <span class="syntax-output">100 req/min</span>
+    <span class="syntax-keyword">routing</span>: <span class="syntax-string">HTTPX reverse-proxy</span>
+    <span class="syntax-keyword">ports</span>: [<span class="syntax-output">"8000:8000"</span>]
+
+  <span class="syntax-class">storage_service</span>:
+    <span class="syntax-keyword">image</span>: <span class="syntax-string">minio:latest</span>
+    <span class="syntax-keyword">protocol</span>: <span class="syntax-string">S3-compatible</span>
+    <span class="syntax-keyword">multi_tenant</span>: <span class="syntax-output">true</span>
+    <span class="syntax-keyword">rbac</span>: <span class="syntax-string">role-based-access</span>
+    <span class="syntax-keyword">ports</span>: [<span class="syntax-output">"9000:9000"</span>]
+
+  <span class="syntax-class">database</span>:
+    <span class="syntax-keyword">engine</span>: <span class="syntax-string">PostgreSQL 15</span>
+    <span class="syntax-keyword">schema</span>: <span class="syntax-string">normalized · indexed</span>
+    <span class="syntax-keyword">tenant_isolation</span>: <span class="syntax-output">true</span>
+
+<span class="syntax-class">networks</span>:
+  <span class="syntax-keyword">default</span>: <span class="syntax-string">bridge</span>
+<span class="syntax-comment"># Deploy: docker compose up --build</span></code></pre>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">Core Stack</h2>
+        <p class="section-subtitle text-center">Tools and technologies I use to build scalable products</p>
+        
+        <div class="skills-grid">
+          
+          <!-- Frontend Card -->
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-bg icon-cyan">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Frontend</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span>React</span><span class="bullet cyan"></span></li>
+              <li><span>HTML</span><span class="bullet cyan"></span></li>
+              <li><span>CSS</span><span class="bullet cyan"></span></li>
+              <li><span>JavaScript</span><span class="bullet cyan"></span></li>
+              <li><span>Tailwind CSS</span><span class="bullet cyan"></span></li>
+            </ul>
+          </div>
+
+          <!-- Backend Card -->
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-bg icon-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              </div>
+              <h3>Backend</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span>Python</span><span class="bullet blue"></span></li>
+              <li><span>FastAPI</span><span class="bullet blue"></span></li>
+              <li><span>Flask</span><span class="bullet blue"></span></li>
+              <li><span>REST APIs</span><span class="bullet blue"></span></li>
+              <li><span>JWT Auth</span><span class="bullet blue"></span></li>
+            </ul>
+          </div>
+
+          <!-- Database Card -->
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-bg icon-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+              </div>
+              <h3>Database</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span>PostgreSQL</span><span class="bullet purple"></span></li>
+              <li><span>SQLite</span><span class="bullet purple"></span></li>
+              <li><span>Redis</span><span class="bullet purple"></span></li>
+              <li><span>MinIO</span><span class="bullet purple"></span></li>
+            </ul>
+          </div>
+
+          <!-- Cloud & Tools Card -->
+          <div class="skills-card">
+            <div class="skills-card-header">
+              <div class="skills-icon-bg icon-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3>Cloud &amp; Tools</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span>Docker &amp; Compose</span><span class="bullet white"></span></li>
+              <li><span>Google Cloud</span><span class="bullet white"></span></li>
+              <li><span>Git &amp; GitHub</span><span class="bullet white"></span></li>
+              <li><span>Postman</span><span class="bullet white"></span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Timeline & Achievements Section -->
+    <section id="timeline" class="timeline-section scroll-reveal">
+      <div class="container">
+        <h2 class="section-title text-center">My Journey</h2>
+        <p class="section-subtitle text-center">Education, certifications, and major achievements</p>
+
+        <div class="journey-grid">
+          
+          <!-- Column 1: Education & Certifications -->
+          <div class="journey-col">
+            <h3 class="journey-title-accent">Education &amp; Certs</h3>
+            
+            <div class="timeline">
+              <!-- Item 1: NHCE -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">Engineering Degree · 2023–2027</div>
+                  <h4 class="timeline-heading">New Horizon College of Engineering</h4>
+                  <p class="timeline-desc">B.Tech in Computer Science &amp; Engineering — Bangalore, India. Building core analytical, programming, and cloud computing principles.</p>
+                </div>
+              </div>
+
+              <!-- Item 2: GC AI -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">Professional Certification · 06/2026</div>
+                  <h4 class="timeline-heading">Google Cloud AI &amp; ML</h4>
+                  <p class="timeline-desc">Introduction to AI and Machine Learning on Google Cloud — Google Cloud / Coursera. Hands-on ML pipeline deployment on GCP.</p>
+                </div>
+              </div>
+
+              <!-- Item 3: NPTEL Cloud -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">Elite Certification · 01/2026 – 03/2026</div>
+                  <h4 class="timeline-heading">NPTEL Cloud Computing</h4>
+                  <p class="timeline-desc">Cloud Computing and Distributed System — NPTEL. Studied advanced cloud systems, virtualization, and microservices scaling architectures.</p>
+                </div>
+              </div>
+
+              <!-- Item 4: Deloitte Data Analytics -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">Industry Certification · 09/2025</div>
+                  <h4 class="timeline-heading">Deloitte Data Analytics</h4>
+                  <p class="timeline-desc">Data Analytics Job Simulation — Deloitte (Forage). Real-world business intelligence processes, data cleaning pipelines, and professional analysis strategies.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Achievements -->
+          <div class="journey-col">
+            <h3 class="journey-title-accent">Milestones</h3>
+
+            <div class="achievements-container">
+              
+              <!-- Achievement Card 1 -->
+              <div class="achievement-card">
+                <div class="achievement-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                </div>
+                <div class="achievement-details">
+                  <h4>1st Place — College Coding Competition</h4>
+                  <p>Secured 1st place out of multiple competing technical squads during an intensive collaborative programming and algorithmic development contest held at college.</p>
+                </div>
+              </div>
+
+              <!-- Achievement Card 2 -->
+              <div class="achievement-card">
+                <div class="achievement-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <div class="achievement-details">
+                  <h4>Smart India Hackathon Competitor</h4>
+                  <p>Selected to represent the academic cohort in engineering innovative technical product solutions within high-intensity development constraints across regional engineering events.</p>
+                </div>
+              </div>
+
+              <!-- Achievement Card 3 -->
+              <div class="achievement-card">
+                <div class="achievement-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <div class="achievement-details">
+                  <h4>BMS College of Engineering Hackathon</h4>
+                  <p>Competed at BMS College of Engineering, building innovative technical product solutions under high-intensity development constraints at an institutional engineering event.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>&copy; 2026 Abhay Kumar Sharma. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+         <a href="mailto:aks9569109384@gmail.com" class="footer-email" aria-label="Email">
+           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+         </a>
+         <a href="https://github.com/Abh4yKodes811" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+         </a>
+         <a href="https://linkedin.com/in/abhayksharma25" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+         </a>
+       </div>
+    </div>
+  </footer>
+
+  <!-- Unified Navigation Active State & Intersection Observer JS -->
+  <script>
+    // ── Mobile navigation toggle ──────────────────────────────────
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinksContainer = document.getElementById('navLinksContainer');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      navLinksContainer.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-item').forEach(item => {
+      item.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        navLinksContainer.classList.remove('active');
+      });
+    });
+
+    // ── Intersection Observer — Active Nav Tracking ───────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-item');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-30% 0px -60% 0px',
+      threshold: 0
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const activeId = entry.target.getAttribute('id');
+          navItems.forEach(item => {
+            if (item.getAttribute('href') === `#${activeId}`) {
+              item.classList.add('active-nav');
+            } else {
+              item.classList.remove('active-nav');
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => sectionObserver.observe(section));
+
+    // ── Scroll Reveal ─────────────────────────────────────────────
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { root: null, rootMargin: '0px 0px -100px 0px', threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ── Resume Modal ──────────────────────────────────────────────
+    const modalBackdrop = document.getElementById('resumeModalBackdrop');
+    const viewResumeBtn = document.getElementById('viewResumeBtn');
+    const modalCloseBtn = document.getElementById('resumeModalClose');
+
+    function openModal() {
+      modalBackdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalBackdrop.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    viewResumeBtn.addEventListener('click', openModal);
+    modalCloseBtn.addEventListener('click', closeModal);
+
+    // Close on backdrop click
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) closeModal();
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalBackdrop.classList.contains('active')) closeModal();
+    });
+
+    // ── Interactive Terminal Tab Switcher ─────────────────────────
+    const tabs = document.querySelectorAll('.terminal-tab');
+    const panels = document.querySelectorAll('.terminal-code-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const targetId = tab.getAttribute('data-target');
+        tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+
+    // ── Theme Toggle Engine (persists across all pages) ───────────
+    (function () {
+      const root        = document.documentElement;
+      const toggleBtn   = document.getElementById('themeToggle');
+      const toggleMobile = document.getElementById('themeToggleMobile');
+      const STORAGE_KEY = 'aks-portfolio-theme';
+
+      // Apply saved preference immediately (prevents flash)
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved === 'light') root.setAttribute('data-theme', 'light');
+
+      function applyToggle () {
+        const isLight = root.getAttribute('data-theme') === 'light';
+        if (isLight) {
+          root.removeAttribute('data-theme');
+          localStorage.setItem(STORAGE_KEY, 'dark');
+        } else {
+          root.setAttribute('data-theme', 'light');
+          localStorage.setItem(STORAGE_KEY, 'light');
+        }
+      }
+
+      if (toggleBtn)    toggleBtn.addEventListener('click', applyToggle);
+      if (toggleMobile) toggleMobile.addEventListener('click', applyToggle);
+    })();
+  </script>
+
+</body>
+</html>

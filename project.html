@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Abhay Kumar Sharma</title>
+  <meta name="description" content="Explore key projects built by Abhay Kumar Sharma, including GateFlow API Gateway, StoreSphere Cloud Storage, and Student Study Planner.">
+  
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="project_css.css">
+  <script>(function(){var t=localStorage.getItem('aks-portfolio-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()</script>
+</head>
+<body>
+
+  <!-- Subtle Grid overlay -->
+  <div class="grid-overlay"></div>
+
+  <!-- Sub-page Header Navigation -->
+  <header class="navbar-header">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">AKS</span>.dev
+      </a>
+      <div class="nav-right-group">
+        <a href="mailto:aks9569109384@gmail.com" class="back-home-btn" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="back-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </a>
+        <a href="https://github.com/Abh4yKodes811" target="_blank" rel="noopener noreferrer" class="back-home-btn" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="back-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="index.html" class="back-home-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="back-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+          <span>Back to Home</span>
+        </a>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects Gallery Main -->
+  <main class="projects-main">
+    <section class="projects-section">
+      <div class="container">
+        
+        <div class="projects-header text-center">
+          <h1 class="projects-title fade-up">Featured Projects</h1>
+          <p class="projects-subtitle fade-up-delay-1">A curated collection of cloud-native systems, microservices architectures, and full-stack engineering solutions.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- ─── Project Card 1: GateFlow ─────────────────────────── -->
+          <article class="project-card fade-up-delay-2" id="gateflow">
+            <div class="card-image-wrapper">
+              <img src="images/gateflow.png" alt="GateFlow – Cloud API Gateway" class="project-img" loading="lazy">
+              <div class="image-gradient-overlay"></div>
+              <!-- Telemetry Status Tag -->
+              <div class="telemetry-tag telemetry-mono">
+                <span class="telemetry-dot"></span>
+                ● Systems Operational
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="project-card-title">GateFlow</h2>
+              <h3 class="project-card-subtitle">Cloud API Gateway</h3>
+              <p class="project-card-desc">
+                Engineered a cloud-native API Gateway featuring secure request routing and Redis-powered rate limiting to protect backend endpoints. Architected a React monitoring dashboard with real-time health checks, analytics pipelines, and interactive testing environments containerized via Docker Compose.
+              </p>
+              
+              <!-- Tech badges -->
+              <div class="tech-badges-grid">
+                <span class="badge-pill">React</span>
+                <span class="badge-pill">FastAPI</span>
+                <span class="badge-pill">Redis</span>
+                <span class="badge-pill">Docker</span>
+                <span class="badge-pill">JWT</span>
+                <span class="badge-pill">HTTPX</span>
+                <span class="badge-pill">Tailwind CSS</span>
+              </div>
+
+              <!-- Architectural Footer -->
+              <div class="project-arch-footer">
+                <div class="arch-divider"></div>
+                <span class="arch-status">Status: Architecture Finalized</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ─── Project Card 2: StoreSphere ──────────────────────── -->
+          <article class="project-card fade-up-delay-3" id="storesphere">
+            <div class="card-image-wrapper">
+              <img src="images/storesphere.png" alt="StoreSphere – Secure File Storage &amp; Sharing Platform" class="project-img" loading="lazy">
+              <div class="image-gradient-overlay"></div>
+              <!-- Telemetry Status Tag -->
+              <div class="telemetry-tag telemetry-mono">
+                <span class="telemetry-dot"></span>
+                ● Container Architecture Active
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="project-card-title">StoreSphere</h2>
+              <h3 class="project-card-subtitle">Secure File Storage &amp; Sharing Platform</h3>
+              <p class="project-card-desc">
+                Developed a multi-tenant file storage platform utilizing RBAC schemas and stateless JWT session management. Integrated MinIO object storage for secure multi-format file uploads alongside a normalized, indexed PostgreSQL database optimized for fast file metadata lookups and tenant isolation.
+              </p>
+              
+              <!-- Tech badges -->
+              <div class="tech-badges-grid">
+                <span class="badge-pill">React</span>
+                <span class="badge-pill">FastAPI</span>
+                <span class="badge-pill">PostgreSQL</span>
+                <span class="badge-pill">Redis</span>
+                <span class="badge-pill">Docker</span>
+                <span class="badge-pill">JWT</span>
+                <span class="badge-pill">MinIO</span>
+              </div>
+
+              <!-- Architectural Footer -->
+              <div class="project-arch-footer">
+                <div class="arch-divider"></div>
+                <span class="arch-status">Deployment: Verified</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ─── Project Card 3: Student Study Planner ────────────── -->
+          <article class="project-card fade-up-delay-4" id="studyplanner">
+            <div class="card-image-wrapper">
+              <img src="images/studyplanner.png" alt="Student Study Planner &amp; Productivity Tracker" class="project-img" loading="lazy">
+              <div class="image-gradient-overlay"></div>
+              <!-- Telemetry Status Tag -->
+              <div class="telemetry-tag telemetry-mono">
+                <span class="telemetry-dot"></span>
+                ● Full Stack System Running
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="project-card-title">Study Planner</h2>
+              <h3 class="project-card-subtitle">Student Study Planner &amp; Productivity Tracker</h3>
+              <p class="project-card-desc">
+                Built a full-stack academic workflow system for programmatic schedule organization and productivity benchmarking. Programmed robust CRUD microservices using SQLite to efficiently persist task logs, managed through an intuitive Flask-templated frontend dashboard.
+              </p>
+              
+              <!-- Tech badges -->
+              <div class="tech-badges-grid">
+                <span class="badge-pill">Python</span>
+                <span class="badge-pill">Flask</span>
+                <span class="badge-pill">SQLite</span>
+                <span class="badge-pill">HTML</span>
+                <span class="badge-pill">CSS</span>
+              </div>
+
+              <!-- Architectural Footer -->
+              <div class="project-arch-footer">
+                <div class="arch-divider"></div>
+                <span class="arch-status">Status: Production Ready</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>&copy; 2026 Abhay Kumar Sharma. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:aks9569109384@gmail.com" class="footer-email" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://github.com/Abh4yKodes811" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://linkedin.com/in/abhayksharma25" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Theme Persistence Engine -->
+  <script>
+    (function () {
+      var root        = document.documentElement;
+      var toggleBtn   = document.getElementById('themeToggle');
+      var STORAGE_KEY = 'aks-portfolio-theme';
+
+      function applyToggle() {
+        var isLight = root.getAttribute('data-theme') === 'light';
+        if (isLight) {
+          root.removeAttribute('data-theme');
+          localStorage.setItem(STORAGE_KEY, 'dark');
+        } else {
+          root.setAttribute('data-theme', 'light');
+          localStorage.setItem(STORAGE_KEY, 'light');
+        }
+      }
+
+      if (toggleBtn) toggleBtn.addEventListener('click', applyToggle);
+    })();
+  </script>
+
+</body>
+</html>
